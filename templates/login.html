@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body style="background-color:#333333;">
+<div class="nav">
+    <a href="/"> Home</a>
+    <a href="/stats">Stats</a>
+    <a href="/contact">Contact</a>
+    <a href="/about">About</a>
+    <div class="right">
+        <a href="/login">Sign in</a>
+    </div>
+</div>
+<br><br>
+<p>Plese enter your credentials:</p>
+<form>
+  Email:
+    <input type="text" value="Email"><br>
+    Password:
+    <input type="text" value="Password"><br>
+    <input type="submit" value="Submit"><br>
+
+</form>
+Don't have an account?<br>
+<a href="/signup" class="button">Register!</a><br>
+Forgot your password?<br>
+<a href="/forgot" class="button">Recover Password</a><br>
+</body>
+</html>

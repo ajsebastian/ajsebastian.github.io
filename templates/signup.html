@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register your account!</title>
+    <link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body style="background-color:#333333;">
+<div class="nav">
+    <a href="/"> Home</a>
+    <a href="/stats">Stats</a>
+    <a href="/contact">Contact</a>
+    <a href="/about">About</a>
+    <div class="right">
+        <a href="/login">Sign in</a>
+    </div>
+</div>
+<br><br>
+<p>We need this information to create your account! Email will be used for verification and notification of upcoming matches.</p>
+<form>
+  Email
+  <input type="text" name="Email"><br>
+    Password:
+    <input type="text" name="Password"><br>
+     Confirm Password:
+    <input type="text" name="Password"><br>
+    Gamertag:
+    <input type="text" name="Tag"><br>
+    <input type="submit" value="Submit"><br>
+
+</form>
+
+<br>
+</body>
+</html>
